@@ -7,21 +7,30 @@
 
 <body>
 <?php
+function SousCathegorie($supercategorie){
+
 include("C:/xampp/Sonia_Abou_projet/Donnees.inc.php");
-echo"<ul>";
+
 foreach ($Hierarchie as $item => $value) {
 
-
-    if (isset($Hierarchie[$item]['sous-categorie'])) {
-
-        $cat= implode(', ',$Hierarchie[$item]['sous-categorie']);
-        echo"<li>";
-        print_r($cat);
-       echo"</li>";
+  if(isset($Hierarchie[$item]['super-categorie']) And isset($Hierarchie[$item]['sous-categorie']) And in_array($supercategorie, $Hierarchie[$item]['super-categorie'][0])){
+ //print_r($Hierarchie[$item]['super-categorie']);
+      $show= implode(', ',$Hierarchie[$item]['sous-categorie']);
+      echo"<li>";
+      print_r($show);
+      echo"</li>";
     }
-}echo"<ul/>";
-?>
+}
 
+
+}
+?>
+<?php
+include("C:/xampp/Sonia_Abou_projet/essai1.php");
+SousCathegorie($cat);
+
+
+?>
 
 </body>
 </html>
