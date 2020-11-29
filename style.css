@@ -1,0 +1,103 @@
+
+body{
+    text-align: center;
+    margin:0;
+    padding:0;
+    line-height: 1.5em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    background: #1a1f19;
+}
+a, a:link, a:visited { color: #cccc66; text-decoration: none}
+a:active, a:hover { color: #cccc66; text-decoration: underline}
+
+
+
+
+/*------------ Header --------------- */
+
+#mo_header {
+    height: 251px;
+    background: #000000 url(images/banner.gif) no-repeat;
+}
+
+#mo_site_title {
+    padding-top: 140px;
+    padding-left: 50px;
+    font-size: 30px;
+    color:#808080;
+}
+
+#mo_site_title span{
+    font-weight: 200;
+    color:#cccc33;
+}
+
+#mo_site_slogan {
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 1.1em;
+    color:#5a5c51;
+}
+/* ---------------------------------- */
+
+/*------------- Menu ------------------*/
+.mo_menu{
+    display: inline-block;
+    width: 80%;
+    margin: auto;
+    height: 67px;
+    padding: 0px;
+    background: #778899;
+}
+
+.mo_menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+
+}
+.mo_menu li{
+    display: inline;
+
+}
+
+.mo_menu li a{
+    padding: 0px 0px;
+    font: 3em arial;
+    text-align: center;
+    text-decoration: none;
+    color: #c6c6c6;
+    width: 200px;
+}
+
+.mo_menu li a:hover, .mo_menu li .current{
+    color: #ffffff;
+    background:#cccc33;
+}
+
+/* ----------------- end of menu----------------*/
+
+/* ----------------- Content ----------------------- */
+
+
+#templatemo_content {
+    width: 1800px;
+}
+
+#templatemo_top {
+    float: left;
+    padding: 20px;
+    width: 1760px;
+    background: #383a2f;
+}
+
+
+
+
+
+
+/*--------- End of Content -------------*/
+
