@@ -11,9 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d47bf1ab-7211-4710-8f4f-d4042aeb2bc3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CategoriePrincipale.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/essaai8.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/essai2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/essai6.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/essai7.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesSousCategories.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donnees.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Donnees.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/essai1.php" beforeDir="false" afterPath="$PROJECT_DIR$/essai1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/firstPage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606568328832</updated>
-      <workItem from="1606568329975" duration="19289000" />
+      <workItem from="1606568329975" duration="73546000" />
     </task>
     <servers />
   </component>
@@ -70,9 +76,21 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="561" y="40" key="#PHP/0.40.1280.680@0.40.1280.680" timestamp="1606598321582" />
-    <state x="117" y="307" key="NewPhpFileDialog" timestamp="1606606468965">
+    <state x="87" y="107" key="NewPhpClassDialog" timestamp="1606817100749">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="117" y="307" key="NewPhpFileDialog/0.40.1280.680@0.40.1280.680" timestamp="1606606468965" />
+    <state x="87" y="107" key="NewPhpClassDialog/0.40.1280.680@0.40.1280.680" timestamp="1606817100749" />
+    <state x="117" y="307" key="NewPhpFileDialog" timestamp="1606835556494">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="117" y="307" key="NewPhpFileDialog/0.40.1280.680@0.40.1280.680" timestamp="1606835556494" />
+    <state x="0" y="174" key="run.anything.popup" timestamp="1606872851430">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="0" y="174" key="run.anything.popup/0.40.1280.680@0.40.1280.680" timestamp="1606872851430" />
+    <state x="47" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1606649527820">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="47" y="41" width="672" height="678" key="search.everywhere.popup/0.40.1280.680@0.40.1280.680" timestamp="1606649527820" />
   </component>
 </project>

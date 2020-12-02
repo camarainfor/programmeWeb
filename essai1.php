@@ -49,7 +49,7 @@ foreach ($Hierarchie as $item => $value) {
         array_push($new_Array,$cat);
         echo"<li>"."<a href='firstPage.php'>";
         echo $cat ."</a>";
-        SousCathegorie($cat);
+        //SousCathegorie($cat);
 
         echo"</li>";
 

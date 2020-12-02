@@ -526,32 +526,6 @@
                     0 => 'Vin effervescent',
                     1 => 'Cointreau',
                     2 => 'Citron',
-                    3 => 'Sirop de sucre de canne',
-                    4 => 'Glaçon',
-                ),
-        ),
-    40 =>
-        array (
-            'titre' => 'Cocktail citron-menthe (sans alcool)',
-            'ingredients' => '4 cl de sirop de menthe|1 trait de sirop de sucre de canne|2 cl de jus de citron vert|3 cl de jus de citron jaune|1 branche de menthe fraîche|1 tranche de citron',
-            'preparation' => 'Mettre dans un shaker, avec de la glace, le sirop de menthe, le sirop de sucre et les jus de citron. Bien agiter. Verser dans un verre, décorer d\'une branche de menthe et d\'une tranche de citron.',
-            'index' =>
-                array (
-                    0 => 'Sirop à la menthe',
-                    1 => 'Sirop de sucre de canne',
-                    2 => 'Jus de citrons verts',
-                    3 => 'Jus de citron',
-                    4 => 'Menthe',
-                    5 => 'Tranche de citron',
-                ),
-        ),
-    41 =>
-        array (
-            'titre' => 'Cocktail coco',
-            'ingredients' => '30 cl de vodka|1/2 l de lait|2 boules de glace à la noix de coco|2 boules de vanille|sirop de coco ou sirop de sucre de canne|5 glaçons',
-            'preparation' => 'Mettre le tout dans un mixeur et dégustez.',
-            'index' =>
-                array (
                     0 => 'Vodka',
                     1 => 'Lait',
                     2 => 'Crème glacée à la noix de coco',
