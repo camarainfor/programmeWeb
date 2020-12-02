@@ -68,6 +68,33 @@ foreach ($c as $value){
     $valeur = str_replace(' ', '_', $value);
 
    echo"<a href=http://localhost:63343/Sonia_Abou_projet/lesSousCategories.php?categorie=$valeur>$value</a>";
+   // ligne ajoute
+   echo "<h1>Les recettes fruits <h1/>";
+
+   // acceder aux sous categories et verifiees que ces elements sont dans recettes
+/*
+    if($Hierarchie[$item]['super-categorie']==$value){
+        foreach ($Hierarchie as $item => $value1){
+            print_r($value1);
+            foreach ($value1["sous-categorie"] as $key => $elemnt){
+                foreach($Recettes as $index => $val){
+                    if(in_array($elemnt,$val["index"])){
+                        echo $val["titre"];
+                    }
+
+                }
+            }
+
+
+        }
+
+
+
+
+    }*/
+
+
+
    echo"</br>";
    echo"</br>";
 
