@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -11,8 +14,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d47bf1ab-7211-4710-8f4f-d4042aeb2bc3" name="Default Changelist" comment="categorie-sousCategorie">
+      <change afterPath="$PROJECT_DIR$/Recettes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/essai9.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aliment.php" beforeDir="false" afterPath="$PROJECT_DIR$/Aliment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CategoriePrincipale.php" beforeDir="false" afterPath="$PROJECT_DIR$/CategoriePrincipale.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/essaai8.php" beforeDir="false" afterPath="$PROJECT_DIR$/essaai8.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesSousCategories.php" beforeDir="false" afterPath="$PROJECT_DIR$/souscategorie.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +42,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AbouProject" />
+    <property name="settings.editor.selected.configurable" value="build.tools" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -46,7 +55,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606568328832</updated>
-      <workItem from="1606568329975" duration="75611000" />
+      <workItem from="1606568329975" duration="75810000" />
+      <workItem from="1606876101733" duration="7766000" />
+      <workItem from="1606945061269" duration="1405000" />
+      <workItem from="1606946658533" duration="2375000" />
+      <workItem from="1606949146135" duration="10354000" />
     </task>
     <task id="LOCAL-00001" summary="categorie-sousCategorie">
       <created>1606873323413</created>
@@ -71,6 +84,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="categorie-sousCategorie" />
@@ -81,14 +95,22 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="561" y="40" key="#PHP/0.40.1280.680@0.40.1280.680" timestamp="1606598321582" />
+    <state x="112" y="135" key="FileChooserDialogImpl" timestamp="1606946992370">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="112" y="135" key="FileChooserDialogImpl/0.40.1280.680@0.40.1280.680" timestamp="1606946992370" />
     <state x="87" y="107" key="NewPhpClassDialog" timestamp="1606817100749">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="87" y="107" key="NewPhpClassDialog/0.40.1280.680@0.40.1280.680" timestamp="1606817100749" />
-    <state x="117" y="307" key="NewPhpFileDialog" timestamp="1606835556494">
+    <state x="117" y="307" key="NewPhpFileDialog" timestamp="1606955465141">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="117" y="307" key="NewPhpFileDialog/0.40.1280.680@0.40.1280.680" timestamp="1606835556494" />
+    <state x="117" y="307" key="NewPhpFileDialog/0.40.1280.680@0.40.1280.680" timestamp="1606955465141" />
+    <state x="0" y="40" width="914" height="680" key="SettingsEditor" timestamp="1606949035397">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="0" y="40" width="914" height="680" key="SettingsEditor/0.40.1280.680@0.40.1280.680" timestamp="1606949035397" />
     <state x="0" y="174" key="run.anything.popup" timestamp="1606872851430">
       <screen x="0" y="40" width="1280" height="680" />
     </state>

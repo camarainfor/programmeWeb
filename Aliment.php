@@ -12,32 +12,30 @@
 <?php
 
 include("C:/xampp/Sonia_Abou_projet/Donnees.inc.php");
-$cat1 = $_GET['aliment'];
+// recupere la valeur de url
+$cat = $_GET['categorie'];
+$cat2 =  $_GET['aliment'];
+echo "<br/>";
+$valeur = str_replace('_', ' ', $cat2);
+echo '<h1>  Les  sous categories principales de : ' . $valeur . '</h1>';
+//print_r($cat);
+echo "<br/>";
 
-$cat1 =  str_replace('_', ' ', $cat1);
 
-echo "<br />";
-// affiche les sous categories
+// affiche les index de Hierachies
 foreach ($Hierarchie as $item => $value) {
+    // verifie sil a un index supercategorie
+    if (isset($Hierarchie[$item]['super-categorie']) && in_array($valeur, $Hierarchie[$item]['super-categorie'])) {
+        $valeur_item = str_replace(' ', '_', $item);
 
-    //echo $item;
-    //echo '<br />';
-    //if ( isset($Hierarchie[$item]['sous-categorie']) && in_array($cat1, $Hierarchie[$item]['sous-categorie'])){
-        if ( isset($Hierarchie[$item]['sous-categorie']) && ($cat1 == $item)){
-            foreach($value['sous-categorie'] as $key => $value)
-            { // echo $item;
-                echo "<a href='#' >$value</a>";
-                echo "</br>";
-                echo "</br>";
+        //echo $valeur_item;
+        echo "<a href=http://localhost:63342/Sonia_Abou_projet/Recettes.php?categorie=$cat&aliment=$valeur_item&ingredient=$valeur>$item</a>";
+        echo "</br>";
+        echo "</br>";
+        echo "</br>";
+    }
 
-
-            }
-
-
-            }
-        }
-        echo "<br />";
-
+}
 
 ?>
 </pre>

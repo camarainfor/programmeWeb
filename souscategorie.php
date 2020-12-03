@@ -27,7 +27,7 @@ foreach ($Hierarchie as $item => $value) {
         $valeur_item = str_replace(' ', '_', $item);
 
         //echo $valeur_item;
-        echo"<a href=http://localhost:63343/Sonia_Abou_projet/Aliment.php?aliment=$valeur_item>$item</a>";
+        echo"<a href=http://localhost:63342/Sonia_Abou_projet/Aliment.php?categorie=$cat&aliment=$valeur_item>$item</a>";
         echo"</br>";
         echo"</br>";
         echo"</br>";

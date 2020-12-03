@@ -13,8 +13,7 @@
 
 include("C:/xampp/Sonia_Abou_projet/Donnees.inc.php");
 
-print_r($Recettes);
-
+print_r($Hierarchie);
 
 ?>
 </pre>
