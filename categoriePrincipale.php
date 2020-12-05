@@ -47,26 +47,26 @@
 include("C:/xampp/Sonia_Abou_projet/Donnees.inc.php");
 //print_r($Hierarchie);
 
-$string="";
+$elementsSupercategorie="";
 
 foreach ($Hierarchie as $item => $value) {
     // verifie sil a un index supercategorie
     if (isset($Hierarchie[$item]['super-categorie'])){
         // recupere tous les supercategories en String, meme celles qui ont deux supercategorie
-        $cat= implode(',',$Hierarchie[$item]['super-categorie']);
-        $string .= $cat. ",";}
+        $implodeSuperCategorie= implode(',',$Hierarchie[$item]['super-categorie']);
+        $elementsSupercategorie .= $implodeSuperCategorie. ",";}
 }
 // enlever la derniere virgule
-$string=trim($string,',');
+$elementsSupercategorie=trim($elementsSupercategorie,',');
 // en les transforme
-$string=explode(",", $string);
-$c=array_unique($string);
+$elementsSupercategorie=explode(",", $elementsSupercategorie);
+$Supercategorie=array_unique($elementsSupercategorie);
 
 // afficher les supercategories
-foreach ($c as $value){
+foreach ($Supercategorie as $value){
     $valeur = str_replace(' ', '_', $value);
 
-   echo"<a href=http://localhost:63342/Sonia_Abou_projet/souscategorie.php?categorie=$valeur>$value</a>";
+   echo"<a href=http://localhost:63342/Sonia_Abou_projet/souscategorie.php?supercategorie=$valeur>$value</a>";
 
 
 
@@ -76,9 +76,6 @@ foreach ($c as $value){
 
 }
 
-
-/*$cat = $_GET['categorie'];
-print_r($cat);*/
 
 ?>
 

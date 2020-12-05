@@ -1,49 +1,74 @@
 <!Doctype html>
 <head>
-
-    <style>
-
-
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
 </head>
-<html>
 <body>
 <pre>
 <?php
+session_start();
+function transformTitle($titre){
+    $name=ucfirst(strtolower($titre));
+    $name=str_replace(' ', '_', $name);
+    return $name;
+}
+transformTitle("AB i");
+?>
+
+<?php
 
 include("C:/xampp/Sonia_Abou_projet/Donnees.inc.php");
-$cat1 = trim(strtolower($_GET['aliment']));
-$cat = trim(strtolower($_GET['categorie']));
-$ingredient = trim(strtolower($_GET['ingredient']));
+$souscategorie = trim(mb_strtolower($_GET['souscategorie']));
+$supercategorie = trim(mb_strtolower($_GET['supercategorie']));
+$ingredient = trim(mb_strtolower($_GET['aliment']));
 //echo "cat donne $cat";
 //echo "aliment donne $cat1";
-$cat1 =  str_replace('_', ' ', $cat1);
+$supercategorie =  str_replace('_', ' ', $supercategorie);
+$souscategorie =  str_replace('_', ' ', $souscategorie);
 
 echo "<br />";
-// affiche les sous categories
+
+
+
+echo "<h1>PANIER</h1> <br />";
+echo "<a href=http://localhost:63342/Sonia_Abou_projet/Panier.php>Panier</a>";
+echo "<br /> <br />";
 foreach ($Recettes as $item => $value) {
 
-    //echo $item;
-    //echo '<br />';
-    //if ( isset($Hierarchie[$item]['sous-categorie']) && in_array($cat1, $Hierarchie[$item]['sous-categorie'])){
+
     if ( isset($Recettes[$item]['ingredients'])) {
-        // print_r($Recettes[$item]['titre']);
 
-        $positionCat1 = strrpos(trim(strtolower($Recettes[$item]['ingredients'])),$cat1);
-        $positionCat = strrpos(trim(strtolower($Recettes[$item]['ingredients'])),$cat);
-        $positionIng = strrpos(trim(strtolower($Recettes[$item]['ingredients'])),$ingredient);
 
-        //echo "positions ".$positionCat1. " ".$positionCat;
+        $positionSouscategorie = strrpos(trim(strtolower($Recettes[$item]['ingredients'])),$souscategorie);
+        $positionSupercategorie = strrpos(trim(strtolower($Recettes[$item]['ingredients'])),$supercategorie);
+        $positionAliment = strrpos(trim(strtolower($Recettes[$item]['ingredients'])),$ingredient);
 
-// a modifie
-        if ($positionCat1 !==false || $positionCat1!==false || $positionIng!==false) {
-           // echo "cas trouve ".$Recettes[$item]['titre'].$Recettes[$item]['ingredients'];
-            echo $Recettes[$item]['titre'];
+        if ($positionSouscategorie !==false || $positionSouscategorie!==false || $positionAliment!==false) {
+          
+
+            $title=$Recettes[$item]['titre'];
+            $imgTitle=transformTitle($title).".jpg";
+            $recetteTitle="'".transformTitle($title)."'";
+            echo $title;
+            ///$ajouter = add_recette."('".$recetteTitle."')";
+            $ajouter='';
+            echo " <button type='button' id='erechnen' onClick=add_recette($recetteTitle)>ajouter au panier </button>";
+
+
+
+
+           // echo "resultat donne".$imgTitle; echo "<br />";
+            $file="Photos/".$imgTitle;
+            echo "<br />";
+            echo "<img src=".$file." alt='' width='50'height='60'>";
+
+
             echo "<br />";
         }
 
 
     }
+
 }
 echo "<br />";
 

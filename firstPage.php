@@ -27,7 +27,7 @@ foreach ($Hierarchie as $item => $value) {
 ?>
 <?php
 include("C:/xampp/Sonia_Abou_projet/essai1.php");
-SousCathegorie($cat);
+SousCathegorie($Supercategorie);
 
 
 ?>
