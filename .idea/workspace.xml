@@ -14,14 +14,77 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d47bf1ab-7211-4710-8f4f-d4042aeb2bc3" name="Default Changelist" comment="categorie-sousCategorie">
-      <change afterPath="$PROJECT_DIR$/Recettephoto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Photos/defaultimage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/recettes4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/Panier.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/action_inscription.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/action_page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/ajouter_recettes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/css/templatemo-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/diminuer_qte.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/img/blue-contem-girl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/img/cocktail.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/img/cocktail2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/img/cocktail4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/img/recettes1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/img/recettes4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/img/recettes5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/img/recettes6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/img/recettes7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/img/recettes8.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/img/recettes8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/img/recettes9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/js/imagesloaded.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/js/isotope.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/js/parallax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/menuAliments.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/menuCategoriePrincipale.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/menuRecettes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/menuSenregistrer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/menuSouscategorie.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/menuconnections.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pageDaccueil/webfonts/fa-solid-900.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aliment.php" beforeDir="false" afterPath="$PROJECT_DIR$/aliment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoriePrincipale.php" beforeDir="false" afterPath="$PROJECT_DIR$/categoriePrincipale.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recettes.php" beforeDir="false" afterPath="$PROJECT_DIR$/Recettes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/essai9.php" beforeDir="false" afterPath="$PROJECT_DIR$/essai9.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/firstPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/souscategorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/souscategorie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cocktail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donnees.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Panier.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recettephoto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recettes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajouter_recette.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aliment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/categoriePrincipale.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diminuer_qte.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/essaai8.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/essai.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/essai1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/essai2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/essai6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/essai7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/essai9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstPage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonctions_panier.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/souscategorie.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +98,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -48,6 +112,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
@@ -56,10 +121,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\Sonia_Abou_projet" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\Sonia_Abou_projet" />
+      <recent name="C:\xampp\Sonia_Abou_projet\pageDaccueil" />
+      <recent name="C:\xampp\Sonia_Abou_projet\pageDaccueil\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\Sonia_Abou_projet\pageDaccueil" />
+      <recent name="C:\xampp\Sonia_Abou_projet\Photos" />
       <recent name="C:\xampp\Sonia_Abou_projet" />
     </key>
   </component>
@@ -76,7 +145,8 @@
       <workItem from="1606945061269" duration="1405000" />
       <workItem from="1606946658533" duration="2375000" />
       <workItem from="1606949146135" duration="34150000" />
-      <workItem from="1607123161260" duration="6679000" />
+      <workItem from="1607123161260" duration="16590000" />
+      <workItem from="1607183306066" duration="31920000" />
     </task>
     <task id="LOCAL-00001" summary="categorie-sousCategorie">
       <created>1606873323413</created>
@@ -112,22 +182,30 @@
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="561" y="40" key="#PHP/0.40.1280.680@0.40.1280.680" timestamp="1606598321582" />
-    <state x="112" y="135" key="FileChooserDialogImpl" timestamp="1606946992370">
+    <state x="371" y="128" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607215423652">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="112" y="135" key="FileChooserDialogImpl/0.40.1280.680@0.40.1280.680" timestamp="1606946992370" />
+    <state x="371" y="128" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1280.680@0.40.1280.680" timestamp="1607215423652" />
+    <state x="112" y="135" key="FileChooserDialogImpl" timestamp="1607207582516">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="112" y="135" key="FileChooserDialogImpl/0.40.1280.680@0.40.1280.680" timestamp="1607207582516" />
     <state x="87" y="107" key="NewPhpClassDialog" timestamp="1606817100749">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="87" y="107" key="NewPhpClassDialog/0.40.1280.680@0.40.1280.680" timestamp="1606817100749" />
-    <state x="117" y="307" key="NewPhpFileDialog" timestamp="1607033451312">
+    <state x="117" y="307" key="NewPhpFileDialog" timestamp="1607204573651">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
-    <state x="117" y="307" key="NewPhpFileDialog/0.40.1280.680@0.40.1280.680" timestamp="1607033451312" />
+    <state x="117" y="307" key="NewPhpFileDialog/0.40.1280.680@0.40.1280.680" timestamp="1607204573651" />
     <state x="0" y="40" width="914" height="680" key="SettingsEditor" timestamp="1606949035397">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
     <state x="0" y="40" width="914" height="680" key="SettingsEditor/0.40.1280.680@0.40.1280.680" timestamp="1606949035397" />
+    <state x="629" y="40" width="576" height="659" key="dock-window-1" timestamp="1607214073997">
+      <screen x="0" y="40" width="1280" height="680" />
+    </state>
+    <state x="629" y="40" width="576" height="659" key="dock-window-1/0.40.1280.680@0.40.1280.680" timestamp="1607214073997" />
     <state x="0" y="174" key="run.anything.popup" timestamp="1606872851430">
       <screen x="0" y="40" width="1280" height="680" />
     </state>
