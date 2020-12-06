@@ -185,7 +185,7 @@ session_start();
                                 <h1>Connectez-vous</h1>
                                 <?php
                                 if(isset($_GET['error']))
-                                    echo "<h2> informations incorrectes </h2>";
+                                    echo "<h2 style='color:red'> informations incorrectes </h2>";
                                     /*echo "<pre>";
                                     print_r($_SESSION['access']);
                                     echo "</pre>";*/
@@ -205,7 +205,7 @@ session_start();
 
                                 <div class="clearfix">
                                     <button type="button" class="cancelbtn">Annuler</button>
-                                    <button type="submit" class="signupbtn">Se connecter</button>
+                                    <button type="submit" name="Submit"  class="signupbtn">Se connecter</button>
                                 </div>
                             </div>
                         </form>

@@ -1,6 +1,7 @@
 //alert("je suis dans le script derniere phase");
 
 // recupere du java au php
+// envoie la recette par la methode post
 function add_recette(title) {
    alert('ajout article ' + title);  // The function returns the product of p1 and p2
 
@@ -15,6 +16,7 @@ function add_recette(title) {
    });
 }
 
+// envoie la recette  apartir de lobject javascript Onclock
 function diminuer_qte(title) {
    alert('diminution quantite ' + title);  // The function returns the product of p1 and p2
 

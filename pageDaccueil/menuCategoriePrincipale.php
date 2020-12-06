@@ -62,15 +62,31 @@
                 <div class="tm-nav-link-highlight"></div>
                 <a class="nav-link" href="menuRecettes.php">Recettes </a>
               </li>
-              <li class="nav-item">
-                <div class="tm-nav-link-highlight"></div>
-                <a class="nav-link" href="menuconnections.php">Connexion</a>
-              </li>
-              <li class="nav-item">
-                <div class="tm-nav-link-highlight"></div>
-                <a class="nav-link" href="menuSenregistrer.php">S'inscrire</a>
-              </li>
+                <?php
+                session_start();
+                if ($_SESSION['connected'] == 1)
+                {
+                    echo '<li class="nav-item">';
+                    echo '<div class="tm-nav-link-highlight"></div>';
+                    echo '<a class="nav-link" href="menuSenregistrer.php">Modifier vos Données personnelles</a>';
+                    echo '</li>';
+                    echo '<li class="nav-item">';
+                    echo '<div class="tm-nav-link-highlight"></div>';
+                    echo '<a class="nav-link" href="connectionDesactivee.php">Se deconnecter</a>';
+                    echo '</li>';
+                }
+                else {
+                    echo '<li class="nav-item">';
+                    echo '<div class="tm-nav-link-highlight"></div>';
+                    echo '<a class="nav-link" href="menuconnections.php">Connexion</a>';
+                    echo '</li>';
+                    echo '<li class="nav-item">';
+                    echo '<div class="tm-nav-link-highlight"></div>';
+                    echo '<a class="nav-link" href="menuSenregistrer.php">Sinscrire</a>';
+                    echo '</li>';
 
+                }
+                ?>
             </ul>
           </div>
         </nav>

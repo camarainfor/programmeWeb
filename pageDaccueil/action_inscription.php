@@ -13,7 +13,7 @@ if (!isset($SESSION['access'])) {
     }
 $_SESSION['access'][$email] = $psw;
 
-
-header('Location: http://localhost:63342/Sonia_Abou_projet/pageDaccueil/index.php');
+print_r($_SESSION);
+header('Location: http://localhost:63342/Sonia_Abou_projet/pageDaccueil/connectionActivee.php');
 
 ?>

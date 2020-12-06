@@ -64,14 +64,31 @@
                 <div class="tm-nav-link-highlight"></div>
                 <a class="nav-link" href="#">Recettes </a>
               </li>
-              <li class="nav-item">
-                <div class="tm-nav-link-highlight"></div>
-                <a class="nav-link" href="menuconnections.php">Connexion</a>
-              </li>
-              <li class="nav-item">
-                <div class="tm-nav-link-highlight"></div>
-                <a class="nav-link" href="menuSenregistrer.php">S'inscrire</a>
-              </li>
+                <?php
+                session_start();
+                if ($_SESSION['connected'] == 1)
+                {
+                    echo '<li class="nav-item">';
+                    echo '<div class="tm-nav-link-highlight"></div>';
+                    echo '<a class="nav-link" href="menuSenregistrer.php">Modifier vos Données personnelles</a>';
+                    echo '</li>';
+                    echo '<li class="nav-item">';
+                    echo '<div class="tm-nav-link-highlight"></div>';
+                    echo '<a class="nav-link" href="connectionDesactivee.php">Se deconnecter</a>';
+                    echo '</li>';
+                }
+                else {
+                    echo '<li class="nav-item">';
+                    echo '<div class="tm-nav-link-highlight"></div>';
+                    echo '<a class="nav-link" href="menuconnections.php">Connexion</a>';
+                    echo '</li>';
+                    echo '<li class="nav-item">';
+                    echo '<div class="tm-nav-link-highlight"></div>';
+                    echo '<a class="nav-link" href="menuSenregistrer.php">Sinscrire</a>';
+                    echo '</li>';
+
+                }
+                ?>
 
             </ul>
           </div>
@@ -98,7 +115,7 @@
   </div>
 
     <?php
-    session_start();
+    //session_start();
     function transformTitle($titre){
         $name=ucfirst(strtolower(skip_accents( $titre, $charset='utf-8')));
         $name=str_replace(' ', '_', $name);
@@ -158,7 +175,7 @@
                         /*echo "<h2>AFFICHER LE PANIER (Recettes choisies)</h2>";*/
                         //echo "";
 
-                        echo "<h1 style='position: relative'><a href=http://localhost:63342/Sonia_Abou_projet/pageDaccueil/Panier.php><img src='../Photos/corbeille1.png' style='position: absolute  left:500px top:1000px' alt='' width='200'height='160'></a></h1>";
+                        echo "<h1 style='position: relative'><a href=http://localhost:63342/Sonia_Abou_projet/pageDaccueil/menuPanier.php><img src='../Photos/corbeille1.png' style='position: absolute  left:500px top:1000px' alt='' width='200'height='160'></a></h1>";
                         echo "</p>";
                         echo "<br /> <br />";
                         foreach ($Recettes as $item => $value) {

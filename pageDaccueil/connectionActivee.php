@@ -47,48 +47,30 @@
               </li>
               <li class="nav-item">
                 <div class="tm-nav-link-highlight"></div>
-                <a class="nav-link" href="menuCategoriePrincipale.php">Categorie principale</a>
+                <a class="nav-link" href="connectionActiveeCategoriePrincipale.php">Categorie principale</a>
               </li>
               <li class="nav-item">
                 <div class="tm-nav-link-highlight"></div>
-                <a class="nav-link" href="menuSouscategorie.php">Sous-Categorie </a>
+                <a class="nav-link" href="connectionActiveeSousCategorie.php">Sous-Categorie </a>
               </li>
 
               <li class="nav-item">
                 <div class="tm-nav-link-highlight"></div>
-                <a class="nav-link" href="menuAliments.php">Aliments </a>
+                <a class="nav-link" href="connectionActiveeAliments.php">Aliments </a>
               </li>
               <li class="nav-item">
                 <div class="tm-nav-link-highlight"></div>
-                <a class="nav-link" href="menuRecettes.php">Recettes </a>
+                <a class="nav-link" href="connectionActiveeRecettes.php">Recettes </a>
               </li>
-                <?php
-                session_start();
-                if ($_SESSION['connected'] == 1)
-                {
-                    echo '<li class="nav-item">';
-                    echo '<div class="tm-nav-link-highlight"></div>';
-                    echo '<a class="nav-link" href="menuSenregistrer.php">Modifier vos Données personnelles</a>';
-                    echo '</li>';
-                    echo '<li class="nav-item">';
-                    echo '<div class="tm-nav-link-highlight"></div>';
-                    echo '<a class="nav-link" href="connectionDesactivee.php">Se deconnecter</a>';
-                    echo '</li>';
-                }
-                else {
-                    echo '<li class="nav-item">';
-                    echo '<div class="tm-nav-link-highlight"></div>';
-                    echo '<a class="nav-link" href="menuconnections.php">Connexion</a>';
-                    echo '</li>';
-                    echo '<li class="nav-item">';
-                    echo '<div class="tm-nav-link-highlight"></div>';
-                    echo '<a class="nav-link" href="menuSenregistrer.php">Sinscrire</a>';
-                    echo '</li>';
-                    
-                }
-                ?>
-              
-                    
+              <li class="nav-item">
+                <div class="tm-nav-link-highlight"></div>
+                <a class="nav-link" href="">Modifier vos Données personnelles</a>
+              </li>
+              <li class="nav-item">
+                <div class="tm-nav-link-highlight"></div>
+                <a class="nav-link" href="connectionDesactivee.php">Se deconnecter</a>
+              </li>
+
             </ul>
           </div>
         </nav>
@@ -117,67 +99,8 @@
 
 
   <!-- row -->
-    <section class="row tm-pt-4 tm-pb-6">
 
-        <div class="tm-page-col-right tm-tab-contents">
-            <div id="first-tab-group" class="tabgroup">
-                <div id="tab1">
-                    <div class="text-content">
-                        <?php
-                        if ($_SESSION['connected'] == 1)
-                        {
-                        echo '<form method="GET">';
-                        echo '<input type="search" name="q" placeholder="Recherche..." />';
-                        echo '<input type="submit" value="Valider" />';
-                        echo'</form>';
-                        }
-                        else{
-
-                            echo'<h3 class="tm-text-secondary tm-mb-5">';
-                            echo 'prenez quelques minutes , pour  savourez ';
-                            echo 'les differenes recettes sur notre page.';
-                            echo 'Dans le lot des recettes vous avez droit à toutes les  ';
-                            echo' saveurs internationales . Elles sont representées dans la rubrique Aliments   ';
-                            echo'</h3>';
-
-
-
-                        }
-
-
-
-
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Page footer -->
+  <!-- Page footer -->
   <footer class="row tm-page-footer">
     <p class="col-12 tm-copyright-text mb-0">
       Copyright &copy; 2020 Camara Aboubacar - Sonia

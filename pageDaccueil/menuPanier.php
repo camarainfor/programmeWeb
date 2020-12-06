@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<?php
-
-                        session_start(); ?>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -66,14 +63,34 @@
                                 <div class="tm-nav-link-highlight"></div>
                                 <a class="nav-link" href="menuRecettes.php">Recettes </a>
                             </li>
-                            <li class="nav-item">
-                                <div class="tm-nav-link-highlight"></div>
-                                <a class="nav-link" href="menuconnections.php">Connexion</a>
-                            </li>
-                            <li class="nav-item">
-                                <div class="tm-nav-link-highlight"></div>
-                                <a class="nav-link" href="menuSenregistrer.php">S'inscrire</a>
-                            </li>
+                            <?php
+                            session_start();
+                            echo "<pre>";
+                            print_r($_SESSION);
+                            echo "</pre>";
+                            if ($_SESSION['connected'] == 1)
+                            {
+                                echo '<li class="nav-item">';
+                                echo '<div class="tm-nav-link-highlight"></div>';
+                                echo '<a class="nav-link" href="menuSenregistrer.php">Modifier vos Données personnelles</a>';
+                                echo '</li>';
+                                echo '<li class="nav-item">';
+                                echo '<div class="tm-nav-link-highlight"></div>';
+                                echo '<a class="nav-link" href="connectionDesactivee.php">Se deconnecter</a>';
+                                echo '</li>';
+                            }
+                            else {
+                                echo '<li class="nav-item">';
+                                echo '<div class="tm-nav-link-highlight"></div>';
+                                echo '<a class="nav-link" href="menuconnections.php">Connexion</a>';
+                                echo '</li>';
+                                echo '<li class="nav-item">';
+                                echo '<div class="tm-nav-link-highlight"></div>';
+                                echo '<a class="nav-link" href="menuSenregistrer.php">Sinscrire</a>';
+                                echo '</li>';
+
+                            }
+                            ?>
 
                         </ul>
                     </div>
@@ -112,11 +129,65 @@
                         <h3 class="tm-text-secondary tm-mb-5">
                             Votre panier
                         </h3>
+                        <?php
+                        // merge panier
+                        $user="inconnu";
+                        if(isset($_SESSION['name_user'])) {
+                            $user = $_SESSION['name_user'];
+                        }
+                        $panier = array();
+                        $quantite =array();
+                        $panierInc = array();
+                        $quantiteInc =array();
+                        //echo "user import donne $user";
+                        if($user !== "inconnu") {
+                            //echo "cas 1";
+                            $panier = $_SESSION["panier"][$user]['recette'];
+                            $quantite = $_SESSION["panier"][$user]["qteProduit"];
+                        }
+                        if(isset($_SESSION["panier"]["inconnu"])) {
+                            //echo "cas 2";
+                            $panierInc = $_SESSION["panier"]["inconnu"]['recette'];
+                            $quantiteInc = $_SESSION["panier"]["inconnu"]["qteProduit"];
+                        }
 
+                        echo "user is $user";
+                        if($user !== "inconnu" && isset($_SESSION['merged']) && $_SESSION['merged'] == 0) {
+                            $qte = 0;
+
+
+                            foreach ($panierInc as $item => $value) {
+                                //echo "foreach";;
+                                //echo $value . " : ";
+                                //echo $quantiteInc[$item];
+                                    //echo "value donnne $value<br />";
+                                    print_r($panier);
+                                    $position_produit = array_search($value,$panier);
+                                    //echo "here 2 $value car $position_produit <br />";
+                                    //echo "position donne ".$position_produit;
+                                    // il lon deja rencontre, on increment
+                                    if($position_produit !== false){
+                                        //echo "here 3  <br />";
+                                        $_SESSION["panier"][$user]["qteProduit"][$position_produit] =  $_SESSION["panier"][$user]["qteProduit"][$position_produit] + $_SESSION["panier"]["inconnu"]["qteProduit"][$position_produit];
+                                    }
+                                    else
+                                     {
+                                        //echo "here 4  <br />",
+                                       array_push($_SESSION["panier"][$user]["recette"],$value);
+                                        array_push($_SESSION["panier"][$user]["qteProduit"],1);
+                                    }
+
+                                //$argument = "'" . $value . "'";
+                                //echo " <button type='button' id='erechnen' onClick=diminuer_qte($argument)>diminuer la quantite </button>";
+                                //echo "<br />";
+                            }
+                        }
+                        $_SESSION['merged'] = 1;
+                        ?>
 
 
                         <?php
-                        if(!isset($_SESSION["is_connected"])){
+                        if(!isset($_SESSION["connected"])){
                             $_SESSION["name_user"] = "inconnu";
                         }
 

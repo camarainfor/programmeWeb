@@ -9,11 +9,13 @@ $user = $_SESSION['name_user'];
 
 echo "user courant : $user";
 echo "debut";
-
+// si le panier nexiste cree le panier
 if(!isset($_SESSION["panier"])) {
     $_SESSION["panier"] = array();
 }
 
+//si le panier user nexiste pas cree le panier user
+//le panier est cree avec deux clees recttes et quantite
 if(!isset($_SESSION["panier"][$user])){
     $_SESSION["panier"][$user] = array(
         "recette" => array(), "qteProduit" => array()
